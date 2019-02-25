@@ -1,0 +1,4 @@
+"firstName","lastName","email","phoneNumber","floatVal","someDate","boolTest","anotherDate","testLine"
+"John","Doe","wew","0123456789","12.332","02/22/2019","false","02/22/2019","line-minus/too--"
+"Jane","Doe","jane@doe.com","9876543210","121.33","03/22/2019","true","null","line-minus/too?"
+"James","Bond","james.bond@mi6.co.uk","0612345678","125.33","05/22/2019","false","02/22/2019","line-minus/too?"
