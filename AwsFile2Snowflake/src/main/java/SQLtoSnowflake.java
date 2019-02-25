@@ -95,41 +95,11 @@ public class SQLtoSnowflake {
 	private static void outputLogin(String extension) {
 		if(bVerbose) System.out.println("log::" + extension);
 	}
-	/*
-	 * 
-	private static void setConfig() {
-		Properties prop = new Properties();
-		
-		  OutputStream output;
-		try {
-			output = new FileOutputStream("config.properties");
-			
-			prop.setProperty("userSF", ""); // Snowflake Username
-			  prop.setProperty("passwordSF", ""); // Snowflake Password
-			  prop.setProperty("accountSF", "aws_cas1"); // Snowflake account
-			  prop.setProperty("warehouseSF", "DW_IK"); // Snowflake Warehouse
-			  prop.setProperty("dbSF", "IGORKA_DB"); // Snowflake Database
-			  prop.setProperty("schemaSF", "JSON_TEST"); // Snowflake Schema
-			  prop.setProperty("verbose", "false"); // Set 'true' for testing
-			  prop.setProperty("columnDefName", "Column_"); //Column name if no Header
-			  prop.setProperty("csvDelimiters", ",#|#\t");// CSV delimiters, Comma = default
-			  prop.setProperty("preferedLocation", "local");//temp, for next version
-			  prop.setProperty("howManyLines2check", "10"); //how many line to evaluate
-			  prop.setProperty("dateFormat",
-			  "MM/dd/yyyy#yyyy/MM/dd#yyyy-MM-dd#MM-dd-yyyy#dd-MM-YYYY#yyyy-MM-dd HH:mm:ss#yyyy-MM-dd HH:mm:ss.SSS#yyyy-MM-dd HH:mm:ss.SSS"
-			  ); // Date formats for evaluation
-			  prop.setProperty("processHeaderFirstLine","false"); // set 'true' if CSV file has HEADER
-			  output.close();
-			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}*/
+	
 
     public static void main(String[] args) throws IOException {
     	
-    	//setConfig() ;
+    	
     	
     	HashMap<String, String> connParams = getProperties();
 		HashMap<String, String> paramsInCSV = new HashMap<String, String>();
